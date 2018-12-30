@@ -1,4 +1,6 @@
 #! python3
+# Program takes predefined strings and trims their beginning and end by characters specified by the user.
+# Could easily be combined with pyperclip to also ask user for string input from the clipboard.
 
 import re
 
