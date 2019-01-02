@@ -4,7 +4,7 @@
 
 import re
 
-print('Enter letters (or spaces) to be removed:')
+print('Enter letters (or spaces) to be removed from beginning and end of string:')
 letters = input()
 leadletters = '^[' + letters + ']+'
 trailletters = '[' + letters + ']+$'
