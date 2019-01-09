@@ -11,7 +11,7 @@ trailletters = '[' + letters + ']+$'
 leadspaceRegex = re.compile(leadletters)
 trailspaceRegex = re.compile(trailletters)
 
-def regexStrip(string):
+def regex_strip(string):
     string = leadspaceRegex.sub('', string)
     string = trailspaceRegex.sub('', string)
     return string
@@ -21,10 +21,10 @@ sample2 = 'SpamSpamBaconSpamEggsSpamSpam'
 
 print(sample1)
 print('Number of characters:' + str(len(sample1)))
-print(regexStrip(sample1))
-print('Number of characters:' + str(len(regexStrip(sample1))))
+print(regex_strip(sample1))
+print('Number of characters:' + str(len(regex_strip(sample1))))
 
 print(sample2)
 print('Number of characters:' + str(len(sample2)))
-print(regexStrip(sample2))
-print('Number of characters:' + str(len(regexStrip(sample2))))
+print(regex_strip(sample2))
+print('Number of characters:' + str(len(regex_strip(sample2))))
